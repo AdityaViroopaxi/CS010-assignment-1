@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data - ProfileMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body class="biodatabg">
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="ProfileHub Logo" /> 
+        </div>
+        <h1>Bio-data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <div class="form-section">
+                <button class="toggle-button" onclick="toggleForm('biodataForm')">Create/Update Bio-data</button>
+                <form id="biodataForm" class="form-hidden">
+                    <label>Full Name: <input type="text" name="FULL NAME: " required></label>
+                    <label>Date of Birth: <input type="date" name="DATE OF BIRTH: " required></label>
+                    <label>Gender: <input type="text" name="GENDER: " required></label>
+                    <label>Marital Status: <input type="text" name="MARTIAL STATUS: "></label>
+                    <label>Nationality: <input type="text" name="NATIONALITY: " required></label>
+                    <label>Contact Number: <input type="tel" name="CONTACT NUMBER: " required></label>
+                    <label>Email: <input type="email" name="EMAIL: " required></label>
+                    <label>Address: <textarea name="ADDRESS: " required></textarea></label>
+                    <label>Languages Known: <input type="text" name="LANGUAGES: " required></label>
+                    <label>Hobbies: <input type="text" name="HOBBIES: "></label>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+            <div class="display-section">
+                <h2>Your Bio-data</h2>
+                <button id="biodataDownloadButton">Download Bio-data as PDF</button>
+                <section id="displayBioData" class="display-template">
+                    <h3>Bio-data Information</h3>
+                    <p>No data saved yet.</p>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>&copy; Aditya Viroopaxi(2BU22CS010) 2024 ProfileHub&reg;. All rights reserved.</p>
+    </footer>
+</body>
+</html>

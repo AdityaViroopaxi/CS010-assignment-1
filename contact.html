@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ProfileHub</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contactbg">
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="ProfileHub Logo" /> 
+        </div>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <div class="content-wrapper">
+        <!-- Contact Details Section -->
+        <div class="display-section contact-details">
+            <h2>Our Contact Details</h2>
+            <p><strong>Email:</strong> contact@profilehub.com</p>
+            <p><strong>Phone:</strong> +91 (0831) 987654</p>
+            <p><strong>Address:</strong> Profile Hub Private Limited, Nehru Nagar,Belagavi,Karnataka,india,590010</p>
+        </div>
+
+        <!-- Contact Form Section -->
+        <div class="form-section">
+            <h2>Send Us a Message</h2>
+            <p>If you have any questions or feedback, please fill out the form below:</p>
+            <form id="contactForm" action="submit_form.php" method="POST">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>&copy; Aditya Viroopaxi(2BU22CS010) 2024 ProfileHub&reg;. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - ProfileMaster</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+</head>
+<body class="resumebg">
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="ProfileHub Logo" /> 
+        </div>
+        <h1>Resume</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+    <main>
+        <div class="content-wrapper">
+            <div class="form-section">
+                <button class="toggle-button" onclick="toggleForm('resumeForm')">Create/Update Resume</button>
+                <form id="resumeForm" class="form-hidden">
+                    <label>Full Name: <input type="text" name="FULL NAME: " required></label>
+                    <label>Contact: <input type="tel" name="CONTACT: " required></label>
+                    <label>Email: <input type="email" name="EMAIL: " required></label>
+                    <label>Objective: <textarea name="OBJECTIVE: " required></textarea></label>
+                    <label>Education: <textarea name="EDUCATION: " required></textarea></label>
+                    <label>Work Experience: <textarea name="EXPERIENCE: " required></textarea></label>
+                    <label>Skills: <textarea name="SKILLS: " required></textarea></label>
+                    <label>Certifications: <textarea name="CERTIFICATIONS: "></textarea></label>
+                    <label>Projects: <textarea name="PROJECTS: "></textarea></label>
+                    <label>References: <textarea name="REFERENCES: "></textarea></label>
+                    <button type="submit">Save</button>
+                </form>
+            </div>
+            <div class="display-section">
+                <h2>Your Resume</h2>
+                <button id="resumeDownloadButton">Download Resume as PDF</button>
+                <section id="displayResume" class="display-template">
+                    <h3>Resume Information</h3>
+                    <p>No data saved yet.</p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="biodata.html">Biodata</a>
+            <a href="resume.html">Resume</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+        <p>&copy; Aditya Viroopaxi(2BU22CS010) 2024 ProfileHub&reg;. All rights reserved.</p>
+    </footer>
+</body>
+</html>
